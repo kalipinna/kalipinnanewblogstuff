@@ -1,4 +1,4 @@
-(function() {
+function fixedNavi() {
 
   let topNavi = $("#navigation").offset().top;
   let topNaviHeight = $("#navigation").height() + 10;
@@ -28,8 +28,11 @@
       });
     }
   });
-}());
+};
 
-    window.addEventListener("resize", function() {
-      fixedNavi()
-    });
+fixedNavi();
+
+
+window.addEventListener("resize", function() {
+  fixedNavi()
+});
