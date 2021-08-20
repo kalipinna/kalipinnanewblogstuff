@@ -29,3 +29,7 @@
     }
   });
 }());
+
+    window.addEventListener("resize", function() {
+      fixedNavi()
+    });
